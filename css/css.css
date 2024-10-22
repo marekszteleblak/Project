@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+  }
+  
+  #maindiv {
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Naprawa pozycjonowania menu */
+  #dashboard {
+    display: flex;
+    flex-wrap: nowrap; /* Elementy w jednej linii bez zawijania */
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky; /* Przypięcie menu */
+    top: 0; /* Menu przypięte u góry ekranu */
+    background-color: #ffffff; /* Kolor tła menu */
+    z-index: 1000; /* Zapewnia, że menu jest na wierzchu */
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Dodaj cien na dole */
+  }
+  
+  #search {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 10px;
+  }
+  
+  #search1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  #search1 input {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #search1 button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #search1 button:hover {
+    background-color: #0056b3;
+  }
+  
+  #search2 button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #search2 button:hover {
+    background-color: #0056b3;
+  }
+  
+  #maininformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  
+  /* Wycentrowanie informacji i ikon */
+  #information, #icon {
+    text-align: center;
+    width: 100%;
+  }
+  
+  #city-name {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  #temp {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  
+  #description {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  #icon {
+    margin-top: 10px;
+  }
+  
+  /* Stylizacje dla sekcji dodatkowych informacji */
+  #airinformation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #humidity, #wind-speed {
+    text-align: center;
+    flex: 1;
+    font-size: 1.1em;
+  }
+  
+  /* Stylizacje dla divów wewnątrz #maininformation */
+  #city-name, #temp, #description {
+    font-size: 1.2em;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 10px 0;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  /* Stylizacja input i przycisków */
+  input, button {
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  /* Stylizacje dla wykresów */
+  #chart1, #chart2, #chart3 {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Stylizacje dla ekranów poniżej 600px */
+ 
+
+  @media (max-width: 688px) {
+    #maindiv {
+        width: 100%;
+    }
+    #dashboard {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #search {
+      width: 100%;
+    }
+  
+    #search1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    #search1 input {
+      width: 70%;
+      margin-right: 10px;
+    }
+  
+    #search1 button {
+      width: 20%;
+    }
+  
+    #maininformation {
+      width: 100%;
+    }
+  
+    #information, #icon {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    #airinformation {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #humidity, #wind-speed {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    #chart1, #chart2, #chart3 {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 950px) {
+    #maindiv {
+        max-width: 90%;
+    }
+}

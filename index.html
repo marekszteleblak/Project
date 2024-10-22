@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="css/css.css">
+  <script src="js/index.js" defer></script>
+
+  <script src="https://unpkg.com/frappe-charts@latest"></script>
+
+
+</head>
+<body>
+<div id="maindiv">
+
+    <div id="dashboard">
+        <div id="search">
+          <div id="search1">
+              <input id="location" type="text">
+              <button id="send_data">search</button>
+            </div>
+           <div id ="search2"> <button id="get_my">Use my localization</button></div>
+            <div>
+                <fieldset> 
+                    <legend>Select Unit</legend>
+            <label><input name="temptype" type="radio" value="metric" checked>°C</label>
+            <label><input name="temptype" type="radio" value="imperial"        >°F</label>
+                </fieldset> 
+            </div>
+
+        </div>
+
+        <!-- Sekcja głównych informacji pogodowych -->
+        <div id="maininformation">
+            <div id='information'>
+                <div id="city-name">
+                   
+                </div>
+                <div id="temp">
+                   
+                </div>
+                <div id="description">
+                   
+                </div>
+            </div>
+            <div id="icon" style="clear: both;"></div>
+        </div>
+
+   
+        <div id="airinformation">
+            <div id="humidity">
+                
+            </div>
+            <div id="wind-speed">
+               
+            </div>
+        </div>
+    </div>
+
+    <div id="chart1">
+       
+    </div>
+
+    <div id="chart2">
+
+    </div>
+    <div id="chart3">
+
+    </div>
+
+</div>
+
+
+ </div>
+
+</body>
+</html>
